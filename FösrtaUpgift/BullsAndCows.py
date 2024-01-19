@@ -23,12 +23,13 @@ while guess != number:
     for i in range(len(number)):
         
         print(number[i] == guess[i])
+        print("----------------------------\n")
         if (guess[i] == number[i]): 
-            print("number is " + str(i + 1) + " is correct.")
+            print("number" + str(i + 1) + " is correct.""\n")
         else:
             for j in range(len(number)):
                 if (i != j):
                     if (guess[i] == number[j]):
-                        print("number " + str(i + 1) + " exist in another positon.")
+                        print("number" + str(i + 1) + " exist in another positon.""\n")
 guess = number 
 print("You win")
