@@ -14,7 +14,9 @@ guess = None
 
 
 while guess != number:
+    print("----------------------------\n")
     print("guess the 4 digit number")
+    print("----------------------------\n")
     temp = input()
     guess = []
     for x in temp:
@@ -22,14 +24,15 @@ while guess != number:
     
     for i in range(len(number)):
         
-        print(number[i] == guess[i])
         print("----------------------------\n")
+        print(number[i] == guess[i])
         if (guess[i] == number[i]): 
-            print("number" + str(i + 1) + " is correct.""\n")
+            print("number" + str(i + 1) + " is correct.")
+            print("----------------------------\n")
         else:
             for j in range(len(number)):
                 if (i != j):
                     if (guess[i] == number[j]):
-                        print("number" + str(i + 1) + " exist in another positon.""\n")
+                        print("number" + str(i + 1) + " exist in another positon.")
 guess = number 
 print("You win")
