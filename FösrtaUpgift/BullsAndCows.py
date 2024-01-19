@@ -28,7 +28,7 @@ while guess != number:
         print(number[i] == guess[i])
         if (guess[i] == number[i]): 
             print("number" + str(i + 1) + " is correct.")
-            print("----------------------------\n")
+            
         else:
             for j in range(len(number)):
                 if (i != j):
