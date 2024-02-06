@@ -13,4 +13,4 @@ for i in range(len(numbers)):
         output.append((numbers[i] + numbers[i - 1] + numbers[i + 1]) /3)
 
 
-print(output)
+print(output) 
